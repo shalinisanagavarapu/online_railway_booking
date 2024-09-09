@@ -1,0 +1,58 @@
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+    h1{
+        text-align:center; color:darkblue;
+        border-style: outset; border-color: darkgreen; 
+        background-color:lavender;
+        text-shadow: 2px 2px 5px lightgreen ;
+        font-family: 'Lucida Calligraphy';
+    }
+    header{
+        background-color:lightgray;
+    }
+    footer{
+        background-color: lightgray;
+        text-align: center;
+    }
+</style>
+<title> HAPPY RAILWAYS</title>
+<link rel="icon" type="img" href="C:\Users\Shalini\Desktop\WMAD\ICON.png">
+<script>
+    $(document).ready(function(){
+        $("#btnToggle").click(function(){
+            $("#p1").fadeIn();
+            $("#p2").fadeIn("slow");
+        });
+        $("h3").mouseover(function(){
+            $("#s").css("color", "green")
+      .slideUp(2000)
+      .slideDown(2000);
+    });
+});
+</script>
+</head>
+<body style="background-color: snow;">
+    <header class="container-fluid"><i><h5> Book Your Train Tickets through Online mode now !!</h5> </i></header>
+    <h1><b>Happy Railways</b></h1>
+    <a  class="link-success" style="text-align: center; text-decoration-line: none;" href="C:\Users\Shalini\Desktop\Online Railway Booking.html" ><h3 > HOME </h3></a>
+    <img src="C:\Users\Shalini\Desktop\WMAD\Train Logo.png" class="img-thumbnail" height="100" width="100">
+    <div id="d1" style="margin: 0 auto;border:outset green;width:600px;height:500px;padding:20px;"><h3 style="color: purple;">CONTACT: </h3><p id="s" style="display: none;">ONE STOP SHOP FOR ALL TRAIN TRAVEL</p><br><br>
+    <h5>* Contact us directly on happyrailways@email.com.<br>
+    * All Train tickets beyond India.<br>
+    * Always the most cost effective and convinient connection.<br></h5><br>
+    <button id="btnToggle">Full Details</button><br><br>
+    <p id="p1" style="display:none;"><b>Opening Hours:</b><br>
+    Monday to Friday:- 09:00 am to 06:00pm</p><br>
+    <p id="p2" style="display:none;"><b>Head Quarters:-</b><br>Soumya Palace,<br>K.R Puram main Street,<br>Banglore.</p></div><br><br>
+    <footer class="container-fluid"><i><h5>&copy;2023 Railway Tickets Booking<br>
+        Followed as per the Rules of Indian Railways</h5>
+        Feel free to share your comments, suggestions, queries and experiences to us anytime on happyrailways@email.com<br>
+        Contact us through: 0823-156-3578 </i></footer>  
+</body>
+</html>
